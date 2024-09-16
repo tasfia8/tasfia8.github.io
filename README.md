@@ -1,6 +1,6 @@
 # Tasfia Mehbuba Islam's Personal Portfolio ⚡️ 
 
--This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io![image](https://github.com/user-attachments/assets/6093ec8b-cc9d-435b-b5d2-4ee4fbf028ea)
+-This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
