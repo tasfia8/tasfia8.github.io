@@ -5,6 +5,13 @@
 ### Activity 1:
 ![Pra1 A1 Screenshot](PraScreenshot/Pra1Activity1.png)
 
+### Activity 2: Repo + Website 
+![](PraScreenshot/Pra1Activity2step1.png)
+
+![](PraScreenshot/Pra1Activity2step3a.png)
+
+
+
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
 > https://varadbhogayata.github.io
