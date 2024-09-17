@@ -10,6 +10,19 @@
 
 ![](PraScreenshot/Pra1Activity2step3a.png)
 
+![](PraScreenshot/Pra1Activity2step3b.png)
+
+![](PraScreenshot/Pra1Activity2step3c.png)
+
+![](PraScreenshot/Pra1Activity2step3d.png)
+
+![](PraScreenshot/Pra1Activity2step3e.png)
+
+![](PraScreenshot/Pra1Activity2step3f.png)
+
+![](PraScreenshot/Pra1Activity2step3g.png)
+
+![](PraScreenshot/Pra1Activity2step3h.png)
 
 
 > A clean, beautiful, responsive portfolio template for Software Developers!
