@@ -549,7 +549,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #AECBFA !important;  /* Own A3 Change 1 */
 }
 
 /* .teal-text {
@@ -559,12 +559,10 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #AECBFA !important; /* Own A3 Change 2 */
 }
 
-/* .teal {
-  background-color: #00695c !important;
-} */
+
 
 @media (min-width: 1200px) {
   #experience .container {
