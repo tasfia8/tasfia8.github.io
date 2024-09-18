@@ -697,19 +697,23 @@
     heading: "License Plate Detection App",
     blurb: "An AI License Plate Detection App",
     projimg: "/PicturesT/proj1AIdetectlicense.png",
-    gitlink: "https://colab.research.google.com/drive/1Om3qKDe2gDcbmy4lX2CkbnzEsp84QUCk?usp=sharing"
+    gitlink: "https://colab.research.google.com/drive/1Om3qKDe2gDcbmy4lX2CkbnzEsp84QUCk?usp=sharing",
+    //year, month, day
+    dateproj: "2023-06-06"
   },
   {
    heading: "Handwritten Digit Identify",
-   blurb: "Project using MNIST dataset to recognise handwritten digit",
-    projimg: "/PicturesT/proj2Handwritten.png",
-   gitlink: "https://github.com/tasfia8/HandWritingML_Identification"
+   blurb: "Recognises handwritten digit",
+   projimg: "/PicturesT/proj2Handwritten.png",
+   gitlink: "https://github.com/tasfia8/HandWritingML_Identification",
+   dateproj: "2022-05-05"
   },
   {
    heading: "Mapper GIS App",
-   blurb: "A simple and extensible mapper application showing 19 cities.",
+   blurb: "A simple and extensible mapper",
     projimg: "/PicturesT/proj3Mapper.png",
-   gitlink: "https://github.com/tasfia8/Map-Application-Project"
+   gitlink: "https://github.com/tasfia8/Map-Application-Project",
+    dateproj: "2021-04-04"
   }
 ];
 
@@ -718,30 +722,37 @@
 //show 1 proj
   let seenProj = 1; 
 
-  // —--------------------------------------------------
-//
+  // Order projects in descending order , latest first
+      const dateSorted = myprojapp.sort(function(m, n) 
+                  {
+                      //return latest
+                       return new Date(n.dateproj) - new Date(b.dateproj);
+                  }
+      );
+
+  //Inject proj dynamically in the recentproject element div
   function showProjApp(index) {
    latestProjDivElem.innerHTML = '';  
 
-    // for loop
+    //Ordered for loop
     for (let j = 0; j < index; j++) {
-      const myapp =myprojapp[j];
+      const myapp =dateSorted[j];
       const myappHTML = `
+        
         <div class="col s12 m6 l4">
           <div class="card medium">
-            <div class="card-image">
-              <img src="${myapp.projimg}" alt="${myapp.heading}">
+            <div class="card-image"> <img src="${myapp.projimg}" alt="${myapp.heading}">
+            
             </div>
-            <div class="card-content">
-              <span class="card-title activator teal-text hoverline">${myapp.heading}</span>
+            <div class="card-content"> <span class="card-title activator teal-text hoverline">${myapp.heading}</span>
               <p>${myapp.blurb}</p>
             </div>
+            
             <div class="card-action">
               <a href="${myapp.gitlink}" target="_blank">Project Link</a>
             </div>
           </div>
-        </div>
-      `;
+        </div>`;
 
       //in div element, add every proj
       latestProjDivElem.innerHTML = latestProjDivElem.innerHTML + myappHTML ;  
@@ -755,24 +766,18 @@
    //show the next proj
    seenProj= seenProj + 1;  
 
-    if (myprojapp.length >= seenProj) {
+    if (dateSorted.length >= seenProj) {
      showProjApp(seenProj);  //show the latest projs
     }
 
     // all projs seen, then load disappear
-    if (myprojapp.length === seenProj) { 
+    if (dateSorted.length === seenProj) { 
       document.getElementById('loadmore').style.display = 'none';
     }
   });
 });
 
-
-
-    
-
- 
-
-    
+   
   </script>         
 
   <!-- A5-T2 above ################################################################################################################################################## --> 
