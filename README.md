@@ -73,7 +73,7 @@
 ✔️ Skills \
 ✔️ Education\
 ✔️ Contact Info\
-✔️ Resume
+✔️ Resume\
 ✔️ Places Travelled
 
 To view a live example, **[click here](https://tasfia8.github.io/)**
