@@ -148,7 +148,7 @@
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
         <a aria-label="Open Tasfia's resume in a new tab" href="https://tasfia8.github.io/resume/TasfiaIslamResume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume Make</span></a>  <!-- A6 - T1 line 151 original <span>Resume</span>-->
       </li>
 
 
@@ -206,7 +206,7 @@
       <li class="bold">
         <a aria-label="Open Tasfia's Resume in a new tab"
           href="https://tasfia8.github.io/resume/TasfiaIslamResume.pdf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume Make</span></a> <!-- A6 - T2 line 209 original <span>Resume</span>-->
       </li>
 
       <!-- Own Activity 4 Change2 Below ############################################################# -->
@@ -299,24 +299,13 @@
           
         </p>
           
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Frontend & Backend Development, Machine Learning, and Computer Vision. I am proficient in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
+      
         <p>
           Seeking a position that will utlize my skills in Software Engineering and provides personal growth.
         </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
+
+
+        
       </div>
     </section>
 
@@ -531,39 +520,9 @@
           </div>
         </div>
 
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/img2own/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/img2own/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Algorithms (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+
+        
 
       </div>
     </section>
@@ -718,7 +677,7 @@
 ];
 
     document.addEventListener("DOMContentLoaded", function() {
-  const latestProjDivElem = document.getElementById('recentprojects');
+  const latestProjDivElem = document.querySelector('#recentprojects');
 //show 1 proj
   let seenProj = 1; 
 
@@ -762,7 +721,7 @@
  showProjApp(seenProj); // at first show the first proj only 
 //button implementation
   
-  document.getElementById('loadmore').addEventListener('click', function() { 
+  document.querySelector('#loadmore').addEventListener('click', function() { 
    //show the next proj
    seenProj= seenProj + 1;  
 
@@ -772,7 +731,7 @@
 
     // all projs seen, then load disappear
     if (dateSorted.length === seenProj) { 
-      document.getElementById('loadmore').style.display = 'none';
+      document.querySelector('#loadmore').style.display = 'none';
     }
   });
 });
