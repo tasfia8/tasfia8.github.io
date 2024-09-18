@@ -810,23 +810,23 @@
     //Only display latest project
     document.addEventListener("DOMContentLoaded",function(){
               //proj 2
-              document.querySelector('#proj2').style.display = 'none';
+              document.getElementByID('proj2').style.display = 'none';
               //proj3
-              document.querySelector('#proj3').style.display = 'none';
+              document.getElementByID('proj3').style.display = 'none';
 
         //JS Loading more projects 
         let projloading=1:
       //Only display latest project
-       document.querySelector('#loadmore').addEventListener('click',function(){
+       document.querySelector('loadmore').addEventListener('click',function(){
               //proj 2
               if(projloading == 1) {   
-                  document.querySelector('#proj2').style.display = 'block';
+                  document.getElementByID('proj2').style.display = 'block';
                   projloading = projloading + 1;
               
               }
               //proj3  
               else if(projloading == 2) {
-                  document.querySelector('#proj3').style.display = 'block';
+                  document.getElementByID('proj3').style.display = 'block';
                   projloading = projloading + 1;
               
               } //else if done
