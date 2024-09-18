@@ -84,7 +84,7 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #E83E8C; /* Own Act3 Dyna Change 1 from fff white to pink */
+  background: #fff;
   color: #00796b; 
   border: 2px solid #fff;
   font-weight: 600;
@@ -344,19 +344,19 @@ h3 {
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);  /* Own Act3 Dyna Change 1 from original rgba(0, 0, 0, 0.5);*/
 }
 
 #intro.section .underline {
   border-bottom: 5px solid #24305e;
 }
 
-#intro.section .teal {
+#intro.section .teal { 
   padding: 0 10px;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4); /* Own Act3 Dyna Change 2 from original rgba(0, 0, 0, 0.4) to  .*/
   height: 100%;
   left: 0;
   position: absolute;
