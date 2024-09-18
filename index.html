@@ -691,37 +691,83 @@
        <!-- A5-T2 Javascript Below ######################################################################################### --> 
 
   <script>
-    //Only display latest project
-    document.addEventListener("DOMContentLoaded",function(){
-              //proj 2
-              document.getElementByID('proj2').style.display = 'none';
-              //proj3
-              document.getElementByID('proj3').style.display = 'none';
 
-        //JS Loading more projects 
-        let projloading=1:
-      //Only display latest project
-       document.getElementByID('loadmore').addEventListener('click',function(){
-              //proj 2
-              if(projloading == 1) {   
-                  document.getElementByID('proj2').style.display = 'block';
-                  projloading = projloading + 1;
-              
-              }
-              //proj3  
-              else if(projloading == 2) {
-                  document.getElementByID('proj3').style.display = 'block';
-                  projloading = projloading + 1;
-              
-              } //else if done
-          
+    const myprojapp = [
+  {
+    heading: "License Plate Detection App",
+    blurb: "An AI License Plate Detection App",
+    projimg: "/PicturesT/proj1AIdetectlicense.png",
+    gitlink: "https://colab.research.google.com/drive/1Om3qKDe2gDcbmy4lX2CkbnzEsp84QUCk?usp=sharing"
+  },
+  {
+   heading: "Handwritten Digit Identify",
+   blurb: "Project using MNIST dataset to recognise handwritten digit",
+    projimg: "/PicturesT/proj2Handwritten.png",
+   gitlink: "https://github.com/tasfia8/HandWritingML_Identification"
+  },
+  {
+   heading: "Mapper GIS App",
+   blurb: "A simple and extensible mapper application showing 19 cities.",
+    projimg: "/PicturesT/proj3Mapper.png",
+   gitlink: "https://github.com/tasfia8/Map-Application-Project"
+  }
+];
 
-       }); 
-      
+    document.addEventListener("DOMContentLoaded", function() {
+  const latestProjDivElem = document.getElementById('recentprojects');
+//show 1 proj
+  let seenProj = 1; 
 
-      
-    
-    }); //event listener func ends
+  // —--------------------------------------------------
+//
+  function showProjApp(index) {
+   latestProjDivElem.innerHTML = '';  
+
+    // for loop
+    for (let j = 0; j < index; j++) {
+      const myapp =myprojapp[j];
+      const myappHTML = `
+        <div class="col s12 m6 l4">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="${myapp.projimg}" alt="${myapp.heading}">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator teal-text hoverline">${myapp.heading}</span>
+              <p>${myapp.blurb}</p>
+            </div>
+            <div class="card-action">
+              <a href="${myapp.gitlink}" target="_blank">Project Link</a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      //in div element, add every proj
+      latestProjDivElem.innerHTML = latestProjDivElem.innerHTML + myappHTML ;  
+    }
+  }
+
+ showProjApp(seenProj); // at first show the first proj only 
+//button implementation
+  
+  document.getElementById('loadmore').addEventListener('click', function() { 
+   //show the next proj
+   seenProj= seenProj + 1;  
+
+    if (myprojapp.length >= seenProj) {
+     showProjApp(seenProj);  //show the latest projs
+    }
+
+    // all projs seen, then load disappear
+    if (myprojapp.length === seenProj) { 
+      document.getElementById('loadmore').style.display = 'none';
+    }
+  });
+});
+
+
+
     
 
  
