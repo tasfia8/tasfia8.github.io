@@ -344,7 +344,7 @@ h3 {
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);  /* Own Act3 Dyna Change 1 from original rgba(0, 0, 0, 0.5);*/
+  text-shadow: 1px 1px 5px rgba(212, 173, 252, 0.5);  /* Own Act3 Dyna Change 1 from original rgba(0, 0, 0, 0.5); to rgba(255, 255, 255, 0.5) to purple (212,173,252) . */
 }
 
 #intro.section .underline {
@@ -356,7 +356,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(212, 173, 252, 0.4); /* Own Act3 Dyna Change 2 from original rgba(0, 0, 0, 0.4) to white (works) rgba(255, 255, 255, 0.4) to purple (212,173,252) .*/ 
+  background-color: rgba(255, 255, 255, 0.4); /* Own Act3 Dyna Change 2 from original rgba(0, 0, 0, 0.4) to white (works) rgba(255, 255, 255, 0.4)*/ 
   height: 100%;
   left: 0;
   position: absolute;
