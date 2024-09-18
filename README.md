@@ -76,8 +76,6 @@
 ✔️ Resume\
 ✔️ Places Travelled
 
-To view a live example, **[click here](https://tasfia8.github.io/)**
-
 ## Tools Used 🛠️
 * [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
 * [<b>Materialize</b>](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
