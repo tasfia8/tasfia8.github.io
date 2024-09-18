@@ -356,7 +356,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(255, 255, 255, 0.4); /* Own Act3 Dyna Change 2 from original rgba(0, 0, 0, 0.4) to  .*/
+  background-color: rgba(212, 173, 252, 0.4); /* Own Act3 Dyna Change 2 from original rgba(0, 0, 0, 0.4) to white (works) rgba(255, 255, 255, 0.4) to purple (212,173,252) .*/ 
   height: 100%;
   left: 0;
   position: absolute;
