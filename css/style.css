@@ -156,7 +156,7 @@ a {
 
 blockquote {
   border-left: 5px solid #795548;
-  color: #FFFFFF; /* A3 Own Change1 #795548 */
+  color: ##795548;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #E83E8C repeat;  /* Activity 3 Own Background Only change 1 initially line was : background: #a7ffeb repeat; */
+  background: #FD7E14 repeat;  /* Activity 3 Own Background Only change 1 initially line was : background: #a7ffeb repeat;  then changed to pink #E83E8C now its orange */
   position: relative;
 }
 
