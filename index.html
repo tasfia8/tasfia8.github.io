@@ -546,6 +546,49 @@
       </div>
     </section>
 
+     <!-- A5-6 Javascript Below ######################################################################################### --> 
+
+  <script>
+    //Only display latest project
+    document.addEventListener("DOMContentLoaded",function(){
+              //proj 2
+              document.getElementByID('proj2').style.display = 'none';
+              //proj3
+              document.getElementByID('proj3').style.display = 'none';
+
+        //JS Loading more projects 
+        let projloading=1:
+      //Only display latest project
+       document.getElementByID('loadmore').addEventListener('click',function(){
+              //proj 2
+              if(projloading == 1) {   
+                  document.getElementByID('proj2').style.display = 'block';
+                  projloading = projloading + 1;
+              
+              }
+              //proj3  
+              else if(projloading == 2) {
+                  document.getElementByID('proj3').style.display = 'block';
+                  projloading = projloading + 1;
+              
+              } //else if done
+          
+
+       }); 
+      
+
+      
+    
+    }); //event listener func ends
+    
+
+ 
+
+    
+  </script>         
+
+  <!-- A5-6 above ################################################################################################################################################## --> 
+    
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
@@ -804,48 +847,7 @@
     })
   </script>
 
-  <!-- A5-6 Javascript Below ######################################################################################### --> 
 
-  <script>
-    //Only display latest project
-    document.addEventListener("DOMContentLoaded",function(){
-              //proj 2
-              document.getElementByID('proj2').style.display = 'none';
-              //proj3
-              document.getElementByID('proj3').style.display = 'none';
-
-        //JS Loading more projects 
-        let projloading=1:
-      //Only display latest project
-       document.getElementByID('loadmore').addEventListener('click',function(){
-              //proj 2
-              if(projloading == 1) {   
-                  document.getElementByID('proj2').style.display = 'block';
-                  projloading = projloading + 1;
-              
-              }
-              //proj3  
-              else if(projloading == 2) {
-                  document.getElementByID('proj3').style.display = 'block';
-                  projloading = projloading + 1;
-              
-              } //else if done
-          
-
-       }); 
-      
-
-      
-    
-    }); //event listener func ends
-    
-
-
-
-    
-  </script>
-
-  <!-- A5-6 above ################################################################################################################################################## -->
   
   
 </body>
