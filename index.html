@@ -723,12 +723,9 @@
   let seenProj = 1; 
 
   // Order projects in descending order , latest first
-      const dateSorted = myprojapp.sort(function(m, n) 
-                  {
-                      //return latest
-                       return new Date(n.dateproj) - new Date(m.dateproj);
-                  }
-      );
+      const dateSorted = myprojapp.sort(
+        (m, n) =>  new Date(n.dateproj) - new Date(m.dateproj));
+          
 
   //Inject proj dynamically in the recentproject element div
   function showProjApp(index) {
@@ -741,10 +738,12 @@
         
         <div class="col s12 m6 l4">
           <div class="card medium">
-            <div class="card-image"> <img src="${myapp.projimg}" alt="${myapp.heading}">
+            <div class="card-image"> 
+            <img src="${myapp.projimg}" alt="${myapp.heading}">
             
             </div>
-            <div class="card-content"> <span class="card-title activator teal-text hoverline">${myapp.heading}</span>
+            <div class="card-content"> 
+            <span class="card-title activator teal-text hoverline">${myapp.heading}</span>
               <p>${myapp.blurb}</p>
             </div>
             
@@ -752,7 +751,8 @@
               <a href="${myapp.gitlink}" target="_blank">Project Link</a>
             </div>
           </div>
-        </div>`;
+        </div>
+        `;
 
       //in div element, add every proj
       latestProjDivElem.innerHTML = latestProjDivElem.innerHTML + myappHTML ;  
