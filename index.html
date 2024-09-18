@@ -403,9 +403,17 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
+        
+        <div class="row" id="recentprojects">  <!-- A5-1 initially <div class="row"> ####################################################--> 
+               
+          <!-- Recent projects empty div JS injected -->
+          
+        </div>
 
-          <div class="col s12 m6 l4">
+             <!-- A5-1 above ################################################### -->
+
+        
+          <div class="col s12 m6 l4" id="proj1">  <!-- A5-3 one line change original:  <div class="col s12 m6 l4">   ####################### -->
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="License Plate Detection App" src="/PicturesT/proj1AIdetectlicense.png" style="height: 100%; width: 100%" class="activator" />
@@ -446,7 +454,7 @@
           </div>
           
           <!--Project 2 Handwritten Digit Recognition -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4" id="proj2">  <!-- A5-4 one line change original:  <div class="col s12 m6 l4">   ####################### -->
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Handwritten Digit Recognition" src="/PicturesT/proj2Handwritten.png" style="height: 100%; width: 100%" class="activator" />
@@ -484,7 +492,7 @@
           </div>
 
           <!-- Project 3: Mapper -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4" id="proj3">  <!-- A5-5 one line change original:  <div class="col s12 m6 l4">   ####################### -->
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Map App" src="/PicturesT/proj3Mapper.png"
@@ -525,6 +533,13 @@
 
 
 <!--Own Deleted 4 a big section here -->
+        
+          <!-- A5-2  ################################################################################################################################################################# --> 
+        <!-- Create button -->
+        <div class='buttons'>
+              <a id="loadmore" class="btn">Load More</a>  
+
+             <!-- A5-2 above ################################################################################################################################################## -->
           
           <!-- ************* -->
         </div>
@@ -788,6 +803,51 @@
       })
     })
   </script>
+
+  <!-- A5-6 Javascript Below ######################################################################################### --> 
+
+  <script>
+    //Only display latest project
+    document.addEventListener("DOMContentLoaded",function(){
+              //proj 2
+              document.querySelector('#proj2').style.display = 'none';
+              //proj3
+              document.querySelector('#proj3').style.display = 'none';
+
+        //JS Loading more projects 
+        let projloading=1:
+      //Only display latest project
+       document.querySelector('#loadmore').addEventListener('click',function(){
+              //proj 2
+              if(projloading == 1) {   
+                  document.querySelector('#proj2').style.display = 'block';
+                  projloading = projloading + 1;
+              
+              }
+              //proj3  
+              else if(projloading == 2) {
+                  document.querySelector('#proj3').style.display = 'block';
+                  projloading = projloading + 1;
+              
+              } //else if done
+          
+
+       }); 
+      
+
+      
+    
+    }); //event listener func ends
+    
+
+
+
+    
+  </script>
+
+  <!-- A5-6 above ################################################################################################################################################## -->
+  
+  
 </body>
 
 </html>
