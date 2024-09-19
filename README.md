@@ -36,7 +36,15 @@
 
 ![](PraScreenshot/Pra1Activity4b.png)
 
-### Activity 5: 
+### Activity 5: Most Recent Projects
+
+![](PraScreenshot/Pra1Activity5a.png)
+
+![](PraScreenshot/Pra1Activity5b.png)
+
+![](PraScreenshot/Pra1Activity5c.png)
+
+![](PraScreenshot/Pra1Activity5d.png)
 
 :star: Star me on GitHub — it helps!
 
