@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border: 6px solid #E83E8C; /* Own A3again 1 original rgba(0, 77, 64, 0.4); */
   border-radius: 50% !important;
 }
 
@@ -41,7 +41,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: #F8A2C0; /* Own A3again 2 original #FFFFFF to light pink */
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b; 
+  color: #E83E8C; /* Own A3again 3 original #00796b */
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #B12B6F; /* Own A3again 4 original #00796b to dark pink */
   background-color: white;
 }
 /* main body */
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: #004d40;
+  color: #E83E8C; /* Own A3again 5 original #004d40 to pink */
 }
 
 /* main blockqoute */
@@ -320,8 +320,8 @@ h3 {
 } */
 
 #intro.section {
-  background: #E83E8C repeat;  /* Activity 3 Own Background Only change 1 initially line was : background: #a7ffeb repeat; */
-  position: relative;
+  background: #E83E8C repeat;  /* Activity 3 Own Background Only change 1 initially line was : background: #a7ffeb repeat; */ /* Own A3again 6 already changed before to pink */
+  position: relative; 
 }
 
 #intro.section .container {
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(245, 162, 193, 0.5); /* Own A3again 7 original rgba(33, 150, 243, 0.2) to pink #F5AC21 with opacity 50% */
 }
 
 .card {
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #E83E8C !important; /* Own A3again 8 original #004d40 to pink */
 }
 
 #skills .card.large {
@@ -549,7 +549,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #E83E8C !important;  /* Own A3 Change 1 TO PINK */
+  color: #E83E8C !important;  /* Own A3 Change 1 TO PINK */ /* Own A3again 8 good */
 }
 
 /* .teal-text {
@@ -559,7 +559,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #E83E8C !important; /* Own A3 Change 2 TO PINK */
+  background-color: #E83E8C !important; /* Own A3 Change 2 TO PINK */ /* Own A3again 9 good */
 }
 
 
@@ -600,7 +600,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #C03575; /* Own A3again 10 original #009688 to darker pink*/
     height: 56px;
     line-height: 56px;
   }
