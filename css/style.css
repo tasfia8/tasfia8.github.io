@@ -548,8 +548,8 @@ small {
 
 /* main .teal-text */
 
-.teal-text {
-  color: #E83E8C !important;  /* Own A3 Change 1 TO PINK */ /* Own A3again 8 good */
+.pink-text {
+  color: #E83E8C !important;  /* Own A3 Change 1 TO PINK */ /* Own A3again 11 Original teal-text */
 }
 
 /* .teal-text {
@@ -558,8 +558,8 @@ small {
 
 /* .teal */
 
-.teal {
-  background-color: #E83E8C !important; /* Own A3 Change 2 TO PINK */ /* Own A3again 9 good */
+.pink {
+  background-color: #E83E8C !important; /* Own A3 Change 2 TO PINK */ /* Own A3again 9 original .teal */
 }
 
 
