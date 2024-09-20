@@ -30,6 +30,10 @@
 
 ![](PraScreenshot/Pra1Activity3b.png)
 
+Note: Final Theme Change with all colors changed
+
+![](PraScreenshot/Pra1Activity3c.png)
+
 ### Activity 4: 
 
 ![](PraScreenshot/Pra1Activity4a.png)
